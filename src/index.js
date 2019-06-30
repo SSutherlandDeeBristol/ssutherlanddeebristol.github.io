@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Button from 'react-bootstrap/Button';
 import './index.css';
 
 function Square(props) {
@@ -82,6 +83,7 @@ function Square(props) {
             <div>{/* status */}</div>
             <ol>{/* TODO */}</ol>
           </div>
+          <Button variant="primary">Primary</Button>
         </div>
       );
     }
