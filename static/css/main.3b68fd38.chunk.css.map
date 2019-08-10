@@ -1,1 +1,0 @@
-{"version":3,"sources":["Home.css","Projects.css"],"names":[],"mappings":"AAAA,WACI,UACJ,CCFA,MACI,cACJ,CAEA,WACI,iBAAmB,CACnB,kBACJ","file":"main.3b68fd38.chunk.css","sourcesContent":["#christine {\n    color: pink;\n}",".card {\n    margin-top: 1em;\n}\n\n.card-body {\n    padding-left: 0.5em;\n    padding-right: 0.5em;\n}"]}
