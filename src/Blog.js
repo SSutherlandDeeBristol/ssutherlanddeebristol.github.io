@@ -7,7 +7,7 @@ class Blog extends React.Component {
         return  <Container>
                     <Card className="text-center">
                         <Card.Body>
-                            <Card.Title><h1>In Progress</h1></Card.Title>
+                            <Card.Title><h1>Blog</h1></Card.Title>
                         </Card.Body>
                     </Card>
                 </Container>

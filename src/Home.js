@@ -86,24 +86,75 @@ class EducationCard extends React.Component {
 }
 
 function HawkEyeBody() {
-    return <p>Blank for now.</p>
+    return  <div>
+                <p>
+                    I am currently undertaking a summer placement at Hawk-Eye Innovations in the Bristol. The Bristol office is
+                    home to the innovations team and they develop new methods for a variety of challenges in all areas of the company domain.
+                    These include ball tracking, player tracking and human pose estimation to name a few.
+                </p>
+                <p>
+                    So far during my placement, I have worked on replicating a state of the art method for stratified initialisation free bundle adjustment
+                    utilising VarPro. This involved countless hours of reading papers and problem solving. I will go into detail about what I did in
+                    a future blog post. In short, I used Hawk-Eye's Nascar scanning data and built a 3d model of a car starting with random points and camera parameters
+                    from just correspondences in the cameras.
+                </p>
+                <p>
+                    Once I had finished this task I made a small edit to the internal tool for human pose data annotation to make it usable for
+                    very zoomed out images.
+                </p>
+                <p>
+                    I contributed to the codebase in the form of a new automatic camera calibration function and a better loop filter for the calibration software.
+                    At the moment I am experimenting with methods for anti-wobble.
+                </p>
+                <p>
+                    So far I have learned a great deal about working in a professional software environment and liasing with various members of
+                    the development team that are in a different office.
+                </p>
+            </div>
 }
 
 function SummerSoftwareBody() {
     return  <div>
                 <p>
-                Developed a graphical editor for a post-doc researcher’s modelling language alongside another student
-                with no assistance. Written in Java, using JavaFX we used an MVC architecture and wrote custom low-level
-                rendering code for the canvas. I gained experience in liaising with a client every week in which we adjusted
-                the goals and required us to be agile with our development.
+                    Developed a graphical editor called SBDRML for a researcher’s robotics modelling language. Conducted over the summer
+                    alongside another student with no technical assistance. Written in Java we utilised an MVC architecture
+                    and wrote custom low-level rendering code for a canvas. I gained experience in liaising with a client every week in which we adjusted
+                    the goals regularly and therefore required us to be agile with our development.
                 </p>
                 <p>
-                More information and download <a target="blank" href="http://swarmdesign.lenkaspace.net/sbdrml/">here</a>.
+                    More information and download <a target="blank" href="http://swarmdesign.lenkaspace.net/sbdrml/">here</a>.
                 </p>
             </div>
 
 }
 
+function FunctionalTABody() {
+    return  <p>
+                I was a teaching assistant for the 1<sup>st</sup> year unit Functional Programming. The role required me
+                to be present during lab times to assist students with their coursework and problem sheets.
+            </p>
+}
+
+function PizzaExpressBody() {
+    return  <div>
+                <p>
+                    I joined the restaurant as a potwash before taking some waiter shifts and being promoted to Manager On Duty.
+                </p>
+                <p>
+                    Manager on Duty:
+                    <ul>
+                        <li>Responsible for everything that happens on shift</li>
+                        <li>Maintaining health and safety standards</li>
+                        <li>Dealing with customer complaints</li>
+                        <li>Applying discounts and refunds</li>
+                        <li>Managing stock – ordering and receiving deliveries</li>
+                        <li>Cashing up at the end of the shift and making sure that all money is accounted for.</li>
+                        <li>Managing staff rota, sending staff home to reduce labour costs and managing staff breaks.</li>
+                        <li>Helping out on the floor when the restaurant is busy.</li>
+                    </ul>
+                </p>
+            </div>;
+}
 class ExperienceCard extends React.Component {
     render() {
         return  <Card className="text-center">
@@ -128,6 +179,16 @@ class ExperienceCard extends React.Component {
                                                 title={<h6>University of Bristol</h6>}
                                                 subtitle="June 2018 - September 2018"
                                                 mainbody={SummerSoftwareBody()}/>
+                                <HomeMedia imagesrc="/images/bristol-uni-icon.png"
+                                                jobtitle={<h5>Teaching Assistant - Functional Programming</h5>}
+                                                title={<h6>University of Bristol</h6>}
+                                                subtitle="September 2017 - December 2017"
+                                                mainbody={FunctionalTABody()}/>
+                                <HomeMedia imagesrc="/images/pizza-express-icon.png"
+                                                jobtitle={<h5>Manager On Duty/Waiter/Cleaner</h5>}
+                                                title={<h6>Pizza Express</h6>}
+                                                subtitle="January 2016 - September 2016"
+                                                mainbody={PizzaExpressBody()}/>
                             </ul>
                         </Card.Text>
                     </Card.Body>
@@ -158,9 +219,18 @@ class HomeTitleCard extends React.Component {
                             </p>
                             <p>
                                 Outside of my studies, I have been on the Kickboxing Society committee for the past two years, helping to run a club with
-                                over 275 members (and hopefully more at the start of this academic year!). This has greatly developed me as a person and
+                                over 275 members (and hopefully more at the start of the next academic year!). This has greatly developed me as a person and
                                 improved my teamwork and communication. I also hold an Orange belt and have competed in several competitions, most notably
                                 achieving 3rd place in my category at the Irish Open. I have run a half-marathon and enjoy playing football, frisbee and golf casually.
+                            </p>
+                            <p>
+                                Having written in so many different programming languages over the course of my degree, I am
+                                comfortable with programming in a new language or framework and utilising new libraries. So far I
+                                have used: C, C++, C#, Python, Java, JavaScript and Haskell. In additon I have done some web development
+                                so am comfortable in using HTML, CSS etc.
+                            </p>
+                            <p>
+                                My preferred programming languages are C++ and Python.
                             </p>
                             <p>
                                 Some of my recent projects can be viewed on the <Link to="/projects">Projects</Link> page.
