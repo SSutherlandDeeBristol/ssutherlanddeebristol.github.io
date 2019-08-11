@@ -91,7 +91,7 @@ class ExampleProjectCard extends React.Component {
                         <Card.Title>
                             {this.props.title}
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="projects-card-text">
                             {this.props.cardtext}
                         </Card.Text>
                     </Card.Body>
@@ -101,10 +101,10 @@ class ExampleProjectCard extends React.Component {
 
 class ProjectTitleCard extends React.Component {
     render() {
-        return <Card className="text-center {this.props.class}">
+        return <Card className="text-center">
                     <Card.Body>
                         <Card.Title><h1>Projects</h1></Card.Title>
-                        <Card.Text className="text-left" id="projects-title-card-text">
+                        <Card.Text className="text-left projects-card-text">
                             <p>
                                 Here are some projects that I have worked on as part of my university course
                                 and outside.
