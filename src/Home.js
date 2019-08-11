@@ -4,7 +4,11 @@ import Container from 'react-bootstrap/Container';
 import Media from 'react-bootstrap/Media';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import ListGroup from 'react-bootstrap/ListGroup';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 import './Home.css';
 
@@ -61,7 +65,7 @@ function SchoolBody() {
 
 class EducationCard extends React.Component {
     render() {
-        return  <Card className="text-center">
+        return  <Card id="education-card" className="text-center">
                     <Card.Body>
                         <Card.Title><h1>Education</h1></Card.Title>
                         <Card.Text>
@@ -201,10 +205,9 @@ class HomeTitleCard extends React.Component {
         return  <Card className="text-center">
                     <Card.Body>
                         <Card.Title><h1>Hi, I'm Sam.</h1></Card.Title>
-                        <Card.Text>
+                        <Card.Text id="home-title-card-text" className="text-left">
                             <p>
                                 I'm a 4th year student at the University of Bristol studying for a MEng in Computer Science.
-                                I have achieved a first class grade every year so far.
                                 This summer I am interning in the innovations team at <a target="blank" href="https://www.hawkeyeinnovations.com">Hawk-Eye Innovations</a>.
                             </p>
                             <p>
@@ -233,7 +236,14 @@ class HomeTitleCard extends React.Component {
                                 My preferred programming languages are C++ and Python.
                             </p>
                             <p>
-                                Some of my recent projects can be viewed on the <Link to="/projects">Projects</Link> page.
+                                Some of my recent projects can be viewed <Link to="/projects">here</Link>.
+                            </p>
+                            <p className="text-center">
+                                <ListGroup>
+
+                                </ListGroup>
+                                <a className="icon-a" href="https://www.linkedin.com/in/samuel-s-3aa133a9/" target="blank"><FontAwesomeIcon className="link-icon" icon={faLinkedin} size="2x" /></a>
+                                <a className="icon-a" href="https://mail.google.com/mail/?view=cm&fs=1&to=ssutherlanddee@gmail.com" target="blank"><FontAwesomeIcon className="link-icon" icon={faEnvelope} size="2x" /></a>
                             </p>
                         </Card.Text>
                     </Card.Body>

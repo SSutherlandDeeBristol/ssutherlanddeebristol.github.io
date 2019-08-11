@@ -7,3 +7,22 @@
 .media {
     margin-top: 1em;
 }
+
+#education-card {
+    margin-bottom: 1em;
+}
+
+* {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+#home-title-card-text {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.icon-a {
+    color: inherit;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
