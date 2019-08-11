@@ -45,7 +45,7 @@ class Christine extends React.Component {
 class App extends React.Component {
   render() {
     return <Router>
-            <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+            <Navbar collapseOnSelect expand="md" bg="light" variant="light" sticky="top">
               <Navbar.Brand>Samuel Sutherland-Dee</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
